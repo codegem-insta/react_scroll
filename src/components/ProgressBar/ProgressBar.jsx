@@ -1,4 +1,4 @@
-import react, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import style from './ProgressBar.module.css';
 
 
@@ -6,18 +6,22 @@ function useScroll() {
     const [percentageScrolled, setPercentageScrolled] = useState(0);
 
     const calculateScrollDistance = () => {
-        const scrollTop = window.pageYOffset;
-        const windowHeight = window.innerHeight;
-        const docHeight = getDocHeight();
+        const scrollOffset = window.pageYOffset;
 
-        const totalDocScrollLength = docHeight - windowHeight;
-        const scrollPostion = Math.floor(scrollTop / totalDocScrollLength * 100)
+        const scrollPostion = Math.floor(scrollOffset / totalPageHeight() * 100)
         console.log(scrollPostion);
 
         setPercentageScrolled(scrollPostion);
     };
 
-    const getDocHeight = () => {
+    const totalPageHeight = () => {
+        const windowHeight = window.innerHeight;
+        const docHeight = documentHeight();
+
+        return docHeight - windowHeight;
+    };
+
+    const documentHeight = () => {
         return Math.max(
             document.body.scrollHeight, document.documentElement.scrollHeight,
             document.body.offsetHeight, document.documentElement.offsetHeight,
