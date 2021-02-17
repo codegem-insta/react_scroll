@@ -7,26 +7,16 @@ function useScroll() {
 
     const calculateScrollDistance = () => {
         const scrollOffset = window.pageYOffset;
+        const scrollPercentage = Math.floor(scrollOffset / totalPageHeight() * 100);
 
-        const scrollPostion = Math.floor(scrollOffset / totalPageHeight() * 100)
-        console.log(scrollPostion);
-
-        setPercentageScrolled(scrollPostion);
+        setPercentageScrolled(scrollPercentage);
     };
 
     const totalPageHeight = () => {
         const windowHeight = window.innerHeight;
-        const docHeight = documentHeight();
+        const docHeight = document.documentElement.scrollHeight;
 
         return docHeight - windowHeight;
-    };
-
-    const documentHeight = () => {
-        return Math.max(
-            document.body.scrollHeight, document.documentElement.scrollHeight,
-            document.body.offsetHeight, document.documentElement.offsetHeight,
-            document.body.clientHeight, document.documentElement.clientHeight
-        );
     };
 
     useEffect(() => {
