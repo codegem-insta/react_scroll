@@ -5,7 +5,7 @@ import UserPosts from './components/UserPosts/UserPosts';
 function App() {
   return (
     <div className="App">
-      <ProgressBar scroll="20%"/>
+      <ProgressBar/>
       <UserPosts />
     </div>
   );

@@ -11,7 +11,7 @@ function allPosts() {
 
 function Post(props) {
     const post = props.post;
-    const content = post.content.split('\n').map(line => <p>{line}</p>) 
+    const content = post.content.split('\n').map((line, index) => <p key={index}>{line}</p>) 
 
     return (
         <div className={style.Post}>
