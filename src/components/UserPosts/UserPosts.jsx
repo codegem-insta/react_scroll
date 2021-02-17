@@ -30,7 +30,7 @@ function UserPosts() {
     const content = allPosts();
 
     return (
-        <div>
+        <div className={style.UserPosts}>
             { content.map(post => <Post key={post.id} post={post} />)}
         </div>
     );

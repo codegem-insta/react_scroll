@@ -1,0 +1,6 @@
+.ProgressBar {
+    position: fixed;
+    background: red;
+    height: 4px;
+    z-index: 10;
+}
