@@ -17,7 +17,7 @@ function Post(props) {
         <div className={style.Post}>
             <div className={style.Header}>
                 <div className={style.Picture}></div>
-                {post.name}
+                <div className={style.Name}>{post.name}</div>
             </div>
             <div className={style.Content}>
                 {content}

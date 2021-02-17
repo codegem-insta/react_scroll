@@ -3,11 +3,18 @@
 }
 
 .Header {
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 
 .Picture {
     background-color: black;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 
 .Content {
