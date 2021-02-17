@@ -3,9 +3,9 @@ import style from './UserPosts.module.css';
 
 function allPosts() {
     return [
-        { id: 0, name: "Michael Scott", content: "\"You miss 100% of the shots you\n don't take – Wayne Gretzky\"" },
-        { id: 1, name: "Elon Musk", content: "Persistence is very important. You should not\n give up unless you are forced to give up." },
-        { id: 2, name: "Neil deGrasse Tyson", content: "If each dead person became a ghost,\n there’d be more than 100-billion of\nthem haunting us all. Creepy, but cool." },
+        { id: 0, name: "Elon Musk", content: "Persistence is very important. You should not\n give up unless you are forced to give up." },
+        { id: 1, name: "Neil deGrasse Tyson", content: "If each dead person became a ghost,\n there’d be more than 100-billion of\nthem haunting us all. Creepy, but cool." },
+        { id: 2, name: "Michael Scott", content: "\"You miss 100% of the shots you\n don't take – Wayne Gretzky\"" },
         { id: 3, name: "Walter White", content: "I am the one who knocks" },
         { id: 4, name: "Neil deGrasse Tyson", content: "If each dead person became a ghost,\n there’d be more than 100-billion of\nthem haunting us all. Creepy, but cool." },
         { id: 5, name: "Walter White", content: "I am the one who knocks" },

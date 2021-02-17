@@ -1,9 +1,13 @@
 .UserPosts {
-    padding: 50px 350px;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Post {
     margin-bottom: 30px;
+    width: 60%;
 }
 
 .Header {
