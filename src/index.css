@@ -8,6 +8,10 @@ body {
   background-color: #0C1117;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* hide scroll bar by keep functionality */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

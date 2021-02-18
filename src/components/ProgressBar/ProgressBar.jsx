@@ -21,9 +21,7 @@ function useScroll() {
     const [percentageScrolled, setPercentageScrolled] = useState(0);
 
     useEffect(() => {
-        const scroll = () => requestAnimationFrame(() => {
-            setPercentageScrolled(calculateScrollPercentage());
-        });
+        const scroll = () => setPercentageScrolled(calculateScrollPercentage());
 
         document.addEventListener('scroll', scroll);
 
