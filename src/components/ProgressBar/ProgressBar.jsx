@@ -17,7 +17,7 @@ function totalPageHeight() {
     return docHeight - windowHeight;
 }
 
-function useScroll() {
+export function useScroll() {
     const [percentageScrolled, setPercentageScrolled] = useState(0);
 
     useEffect(() => {
@@ -33,7 +33,9 @@ function useScroll() {
 
 
 function ProgressBar() {
-    const percentScroll = useScroll();
+    const startX = 20;
+    const scaleDown = (100-startX)/100;
+    const percentScroll = startX + useScroll(startX)*scaleDown;
 
     return (
         <div className={style.ProgressBar} style={{ width: percentScroll + '%' }}>

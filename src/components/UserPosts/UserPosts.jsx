@@ -1,6 +1,7 @@
 import react from 'react';
 import style from './UserPosts.module.css';
 import logo from './logo.png';
+import { useScroll } from '../ProgressBar/ProgressBar';
 
 function allPosts() {
     return [
@@ -34,12 +35,16 @@ function Post(props) {
 
 function UserPosts() {
     const content = allPosts();
+    const scroll = useScroll();
+    const range = 30;
+    const change = (scroll >= 0 && scroll <= range) ? 1-(scroll*10/100) : 1-(range*10/100);
+    const width2 = 150;
 
     return (
         <div className={style.UserPosts}>
             <div className={style.Instructions}> 
                 <p style={{fontSize: "80px", marginBottom: "50px"}}>↑</p>
-                <img src={logo} style={{width: "120px"}}/><br />
+                <img src={logo} style={{width: width2 + "px"}} /><br />
                 React Scroll Progress<br />
                 Made easy<br />
             </div>
