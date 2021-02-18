@@ -1,5 +1,6 @@
 import react from 'react';
 import style from './UserPosts.module.css';
+import logo from './logo.png';
 
 function allPosts() {
     return [
@@ -10,10 +11,7 @@ function allPosts() {
         { id: 4, name: "Walter White", content: "I am the one who knocks" },
         { id: 5, name: "Michael Scott", content: "\"You miss 100% of the shots you\n don't take – Wayne Gretzky\"" },
         { id: 6, name: "Neil deGrasse Tyson", content: "If each dead person became a ghost,\n there’d be more than 100-billion of\nthem haunting us all. Creepy, but cool." },
-        { id: 7, name: "Walter White", content: "I am the one who knocks" },
-        { id: 8, name: "Elon Musk", content: "Persistence is very important. You should not\n give up unless you are forced to give up." },
-        { id: 9, name: "Michael Scott", content: "\"You miss 100% of the shots you\n don't take – Wayne Gretzky\"" },
-        { id: 10, name: "Nassim Nicholas Taleb", content: "Things always become obvious\n after the fact" }
+        { id: 7, name: "Walter White", content: "I am the one who knocks" }
     ];
 }
 
@@ -41,8 +39,9 @@ function UserPosts() {
         <div className={style.UserPosts}>
             <div className={style.Instructions}> 
                 <p style={{fontSize: "80px", marginBottom: "50px"}}>↑</p>
+                <img src={logo} style={{width: "120px"}}/><br />
                 React Scroll Progress<br />
-                Made easy
+                Made easy<br />
             </div>
             { content.map(post => <Post key={post.id} post={post} />)}
 
