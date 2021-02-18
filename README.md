@@ -1,6 +1,6 @@
 ## React scroll progress made easy
 
-<p align="center"><img src="animation/main.gif" /></p>
+<p align="center"><img src="animation/main.gif" width="60%"/></p>
 
 ### ProgressBar component
 
