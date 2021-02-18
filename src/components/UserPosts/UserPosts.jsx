@@ -39,7 +39,16 @@ function UserPosts() {
 
     return (
         <div className={style.UserPosts}>
+            <div className={style.Instructions}> 
+                <p style={{fontSize: "80px", marginBottom: "50px"}}>↑</p>
+                React Scroll Progress<br />
+                Made easy
+            </div>
             { content.map(post => <Post key={post.id} post={post} />)}
+
+            <div className={style.InstructionsBottom}> 
+                Swipe →
+            </div>
         </div>
     );
 }

@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0C1117;
+  
+  cursor: none; 
+  overscroll-behavior-y: none; /* Disable bounce at the bottom*/
 }
 
 body::-webkit-scrollbar {

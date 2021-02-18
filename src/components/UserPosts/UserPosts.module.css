@@ -1,3 +1,21 @@
+.Instructions {
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 800px;
+    margin-bottom: 400px;
+}
+
+.InstructionsBottom {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 200%;
+    margin-top: 400px;
+    margin-bottom: 330px;
+}
+
 .UserPosts {
     padding: 50px 0px;
     display: flex;
