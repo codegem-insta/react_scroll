@@ -1,6 +1,6 @@
 .Instructions {
     color: white;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 150%;
     margin-top: 100px;
@@ -13,7 +13,7 @@
     font-weight: 700;
     line-height: 200%;
     margin-top: 400px;
-    margin-bottom: 330px;
+    margin-bottom: 320px;
 }
 
 .UserPosts {
@@ -34,8 +34,9 @@
     width: 100%;
     align-items: center;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .Picture {
@@ -55,7 +56,7 @@
     flex-direction: column;
 
     font-weight: 500;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .Content > p {

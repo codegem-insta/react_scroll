@@ -5,10 +5,10 @@ import { useScroll } from '../ProgressBar/ProgressBar';
 
 function allPosts() {
     return [
-        { id: 0, name: "Elon Musk", content: "Persistence is very important. You should not\n give up unless you are forced to give up." },
-        { id: 1, name: "Michael Scott", content: "\"You miss 100% of the shots you\n don't take – Wayne Gretzky\"" },
+        { id: 0, name: "Elon Musk", content: "Persistence is very important.\nYou should not give up unless you\n are forced to give up." },
+        { id: 1, name: "Michael Scott", content: "\"You miss 100% of the shots you\n don't take – Wayne Gretzky\"\n- Michael Scott" },
         { id: 2, name: "Nassim Nicholas Taleb", content: "Things always become obvious\n after the fact" },
-        { id: 3, name: "Neil deGrasse Tyson", content: "If each dead person became a ghost,\n there’d be more than 100-billion of\nthem haunting us all. Creepy, but cool." },
+        { id: 3, name: "Neil deGrasse Tyson", content: "If each dead person became a\n ghost, there’d be more than\n 100-billion ofthem haunting \nus all. Creepy, but cool." },
         { id: 4, name: "Walter White", content: "I am the one who knocks" },
         { id: 5, name: "Michael Scott", content: "\"You miss 100% of the shots you\n don't take – Wayne Gretzky\"" },
         { id: 6, name: "Neil deGrasse Tyson", content: "If each dead person became a ghost,\n there’d be more than 100-billion of\nthem haunting us all. Creepy, but cool." },
@@ -38,13 +38,13 @@ function UserPosts() {
     const scroll = useScroll();
     const range = 30;
     const change = (scroll >= 0 && scroll <= range) ? 1-(scroll*10/100) : 1-(range*10/100);
-    const width2 = 150;
+    const width2 = 250;
 
     return (
         <div className={style.UserPosts}>
             <div className={style.Instructions}> 
-                <p style={{fontSize: "80px", marginBottom: "50px"}}>↑</p>
-                <img src={logo} style={{width: width2 + "px"}} /><br />
+                <p style={{fontSize: "90px", marginBottom: "0px"}}>↑</p>
+                <img src={logo} style={{width: width2 + "px", marginBottom: "-20px"}} /><br />
                 React Scroll Progress<br />
                 Made easy<br />
             </div>
