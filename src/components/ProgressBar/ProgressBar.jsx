@@ -8,7 +8,7 @@ function calculateScrollPercentage() {
     const scrollPercentage = Math.floor(scrollOffset / totalPageHeight() * 100);
 
     return scrollPercentage;
-};
+}
 
 function totalPageHeight() {
     const windowHeight = window.innerHeight;
